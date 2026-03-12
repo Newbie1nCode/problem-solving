@@ -1,0 +1,16 @@
+#include<iostream>
+using namespace std;
+int main(){
+    long long n; long long count = 0;
+    cin>>n;
+    long long a = 0; long long b = 1;
+    long long target;
+    while(count < n){
+        target = a;
+        long long next = a + b;
+        a = b;
+        b = next;
+        count++;
+    }
+    cout<<target;
+}
